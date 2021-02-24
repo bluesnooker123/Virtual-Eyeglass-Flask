@@ -9,24 +9,52 @@
 </head>
 
 <body>
-<center>
-    <div id="camera">
-        <img src="{{ url_for('video_feed') }}" alt="video feed">
-    </div>
-    <div id="btns-div">
-        <p id="guideDiv"></p>
-        <a id="prevBtn" href="{{ url_for('change_spectacle', query_params={method: 'prev'}) }}">
-            <img src="{{ url_for('static',filename='left-arrow.png') }}" alt="prev spectacle" class="btn">
-        </a>
-{#        <a id="checkBtn" href="{{ url_for('change_spectacle') }}">#}
-{#            <img src="{{ url_for('static',filename='checked.png') }}" alt="check" class="btn">#}
-{#        </a>#}
-        <a id="nextBtn" href="{{ url_for('change_spectacle', query_params={method: 'next'}) }}">
-            <img src="{{ url_for('static',filename='right-arrow.png') }}" alt="next spectacle" class="btn">
-        </a>
+<div class="container">
+    <div class="row">
+        <div id="btns-div" class="col-md-4 col-sm-4 col-lg-4">
+            <div class="row mt-5">
+                <a id="glass_1" href="{{ url_for('change_spectacle', query_params={method: 'glass_1'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/man_1.png') }}" alt="glass_1" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+                <a id="glass_2" href="{{ url_for('change_spectacle', query_params={method: 'glass_2'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/man_2.png') }}" alt="glass_2" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+                <a id="glass_3" href="{{ url_for('change_spectacle', query_params={method: 'glass_3'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/man_3.png') }}" alt="glass_3" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+                <a id="glass_4" href="{{ url_for('change_spectacle', query_params={method: 'glass_4'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/man_4.png') }}" alt="glass_4" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+                <a id="glass_5" href="{{ url_for('change_spectacle', query_params={method: 'glass_5'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/man_5.png') }}" alt="glass_5" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+                <a id="glass_6" href="{{ url_for('change_spectacle', query_params={method: 'glass_6'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/man_6.png') }}" alt="glass_6" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+    
+                <a id="glass_7" href="{{ url_for('change_spectacle', query_params={method: 'glass_7'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/woman_1.png') }}" alt="glass_7" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+                <a id="glass_8" href="{{ url_for('change_spectacle', query_params={method: 'glass_8'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/woman_2.png') }}" alt="glass_8" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+                <a id="glass_9" href="{{ url_for('change_spectacle', query_params={method: 'glass_9'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/woman_3.png') }}" alt="glass_9" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+                <a id="glass_10" href="{{ url_for('change_spectacle', query_params={method: 'glass_10'}) }}">
+                    <img src="{{ url_for('static',filename='glasses/woman_4.png') }}" alt="glass_10" class="btn col-md-6 col-sm-6 col-lg-6 mb-2" style="background-color: white; width:400px; height: 7vh;">
+                </a>
+    
+            </div>
 
+        </div>
+        <div id="camera" class="col-md-8 col-sm-8 col-lg-8">
+            <img src="{{ url_for('video_feed') }}" alt="video feed">
+            <p id="guideDiv"></p>
+        </div>
+    
     </div>
-</center>
+</div>
 </body>
 <script>
     const guideElement = document.getElementById("guideDiv");

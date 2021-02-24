@@ -112,16 +112,26 @@ def change_spectacle():
     change_method = request.args.get('method')
     if change_method == 'start':
         cache['overlay_obj_index'] = 0   
-    elif change_method == 'next':
-        if cache['overlay_obj_index'] == len(obj_keys) - 1:
-            cache['overlay_obj_index'] = 0
-        else:
-            cache['overlay_obj_index'] = cache['overlay_obj_index'] + 1
-    elif change_method == 'prev':
-        if cache['overlay_obj_index'] == 0:
-            cache['overlay_obj_index'] = len(obj_keys) - 1
-        else:
-            cache['overlay_obj_index'] = cache['overlay_obj_index'] - 1
+    elif change_method == 'glass_1':
+        cache['overlay_obj_index'] = 1
+    elif change_method == 'glass_2':
+        cache['overlay_obj_index'] = 2
+    elif change_method == 'glass_3':
+        cache['overlay_obj_index'] = 3
+    elif change_method == 'glass_4':
+        cache['overlay_obj_index'] = 4
+    elif change_method == 'glass_5':
+        cache['overlay_obj_index'] = 5
+    elif change_method == 'glass_6':
+        cache['overlay_obj_index'] = 6
+    elif change_method == 'glass_7':
+        cache['overlay_obj_index'] = 7
+    elif change_method == 'glass_8':
+        cache['overlay_obj_index'] = 8
+    elif change_method == 'glass_9':
+        cache['overlay_obj_index'] = 9
+    elif change_method == 'glass_10':
+        cache['overlay_obj_index'] = 10
     return render_template('index.html')
 
 
