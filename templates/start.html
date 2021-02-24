@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>Virtual Eyeglasses</title>
+    <style type="text/css">
+    	.welcomePage {
+		    height: 100%;
+		    width: 100vw;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -ms-flexbox;
+		    display: flex;
+		    flex-align: column;
+		    -webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		    position: fixed;
+		    background-color: #fff;
+		    z-index: 1000;
+		    -webkit-transition: opacity .5s ease-in-out;
+		    transition: opacity .5s ease-in-out;
+		}
+		.welcomePage__photo {
+		    -webkit-box-flex: 1;
+		    -webkit-flex-grow: 1;
+		    -ms-flex-positive: 1;
+		    flex-grow: 1;
+		    width: 50%;
+		    -webkit-align-self: center;
+		    -ms-flex-item-align: center;
+		    align-self: center;
+		}
+    	.welcomePage__photo img {
+		    border-radius: 100%;
+		    width: 70%;
+		    margin-left: 30%;
+		}
+		.welcomePage__intro {
+		    position: relative;
+		    z-index: 15000;
+		    width: 50%;
+		    background: #fff;
+		    -webkit-align-self: center;
+		    -ms-flex-item-align: center;
+		    align-self: center;
+		}
+		.welcomePage__intro__title {
+		    text-align: center;
+		}
+		.welcomePage__intro__title__container {
+		    text-align: center;
+		    font-size: 12pt;
+		    width: 100%;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		}
+		.welcomePage__logo {
+		    width: 300px;
+		    margin-bottom: 40px;
+		}
+		.welcomePage__intro__title__container__text {
+		    font-size: 17pt;
+		    width: 80%;
+		    margin-left: 10%;
+		    margin-right: 10%;
+		}
+		.welcomePage__intro__title__container__amazonContainer {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -ms-flexbox;
+		    display: flex;
+		    margin-top: 30px;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    font-style: italic;
+		    font-size: 10pt;
+		    width: 100%;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		}
+		.welcomePage__intro__title__container__button {
+		    height: 50px;
+		    text-align: center;
+		    margin: 40px auto;
+		    background: #0c7fc2;
+		    color: #fff;
+		    border-radius: 3px;
+		    font-size: 15pt;
+		    border: none;
+		    -webkit-transition: background .2s;
+		    transition: background .2s;
+		    padding-left: 32px;
+		    padding-right: 32px;
+		    font-weight: 700;
+		    display: block;
+		}
+		img, svg {
+		    max-width: 100%;
+		}
+	</style>
+  </head>
+
+  <body>
+	<div id="welcome-page" class="welcomePage">
+		<div class="welcomePage__photo">
+			<img src="{{ url_for('static',filename='affiche2.jpg') }}" alt="">
+		</div>
+		<div id="welcome-page-intro" class="welcomePage__intro">
+			<div id="welcome-page-intro-title" class="welcomePage__intro__title">
+				<div class="welcomePage__intro__title__container">
+					<div class="welcomePage__logo">
+						<img src="{{ url_for('static',filename='LOGO_JEELIZ_BETA.png') }}" alt="Jeeliz">
+					</div>
+					<div class="welcomePage__intro__title__container__text">
+						<span>Try on sunglasses virtually with your webcam (or a picture) before buying them.</span>
+					</div>
+          <a id="startBtn" href="{{ url_for('change_spectacle', query_params={method: 'start'}) }}">
+            <img src="{{ url_for('static',filename='start_btn.png') }}" alt="start button" class="btn">
+          </a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+<!--   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+	jQuery( document ).ready(function( $ ) {
+		
+	    $('#btn_start_experience').click(function(){
+	        location.href = window.location.href.replace("start.html", "index.html");
+	    });
+	});
+  </script>
+
+ -->
+</html>
+
+
+
+
+

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <title>Camera App</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<center>
+    <div id="camera">
+        <img src="{{ url_for('video_feed') }}" alt="video feed">
+    </div>
+    <div id="btns-div">
+        <p id="guideDiv"></p>
+        <a id="prevBtn" href="{{ url_for('change_spectacle', query_params={method: 'prev'}) }}">
+            <img src="{{ url_for('static',filename='left-arrow.png') }}" alt="prev spectacle" class="btn">
+        </a>
+{#        <a id="checkBtn" href="{{ url_for('change_spectacle') }}">#}
+{#            <img src="{{ url_for('static',filename='checked.png') }}" alt="check" class="btn">#}
+{#        </a>#}
+        <a id="nextBtn" href="{{ url_for('change_spectacle', query_params={method: 'next'}) }}">
+            <img src="{{ url_for('static',filename='right-arrow.png') }}" alt="next spectacle" class="btn">
+        </a>
+
+    </div>
+</center>
+</body>
+<script>
+    const guideElement = document.getElementById("guideDiv");
+    setInterval(() => {
+        fetch("{{ url_for('emotion_feed') }}")
+        .then(response => {
+                response.text().then(resp => {
+                    if (resp === "suggest") {
+                        guideElement.innerHTML = "It seems that you're happy. Do you want to buy this spectacles?";
+                    }
+                    if (resp === "change") {
+                        guideElement.innerHTML = "It seems that you're unhappy. Do you want to change spectacles?";
+                    }
+                    guideElement.hidden = resp === "none";
+                })
+            });
+        }, 5000);
+</script>
+</html>

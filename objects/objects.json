@@ -1,0 +1,202 @@
+{
+  "man_1": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 150
+      },
+      "left_center": {
+        "x": 300,
+        "y": 150
+      },
+      "right_center": {
+        "x": 900,
+        "y": 150
+      }
+    },
+    "path": "objects/glasses/man_1.png"
+  },
+  "man_2": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 150
+      },
+      "left_center": {
+        "x": 320,
+        "y": 150
+      },
+      "right_center": {
+        "x": 880,
+        "y": 150
+      }
+    },
+    "path": "objects/glasses/man_2.png"
+  },
+  "man_3": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 130
+      },
+      "left_center": {
+        "x": 320,
+        "y": 130
+      },
+      "right_center": {
+        "x": 880,
+        "y": 130
+      }
+    },
+    "path": "objects/glasses/man_3.png"
+  },
+  "man_4": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 170
+      },
+      "left_center": {
+        "x": 320,
+        "y": 170
+      },
+      "right_center": {
+        "x": 880,
+        "y": 170
+      }
+    },
+    "path": "objects/glasses/man_4.png"
+  },
+  "man_5": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 150
+      },
+      "left_center": {
+        "x": 320,
+        "y": 150
+      },
+      "right_center": {
+        "x": 880,
+        "y": 150
+      }
+    },
+    "path": "objects/glasses/man_5.png"
+  },
+  "man_6": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 150
+      },
+      "left_center": {
+        "x": 320,
+        "y": 150
+      },
+      "right_center": {
+        "x": 880,
+        "y": 150
+      }
+    },
+    "path": "objects/glasses/man_6.png"
+  },
+  "woman_1": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 150
+      },
+      "left_center": {
+        "x": 320,
+        "y": 150
+      },
+      "right_center": {
+        "x": 880,
+        "y": 150
+      }
+    },
+    "path": "objects/glasses/woman_1.png"
+  },
+  "woman_2": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 150
+      },
+      "left_center": {
+        "x": 320,
+        "y": 150
+      },
+      "right_center": {
+        "x": 880,
+        "y": 150
+      }
+    },
+    "path": "objects/glasses/woman_2.png"
+  },
+  "woman_3": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 170
+      },
+      "left_center": {
+        "x": 320,
+        "y": 170
+      },
+      "right_center": {
+        "x": 880,
+        "y": 170
+      }
+    },
+    "path": "objects/glasses/woman_3.png"
+  },
+  "woman_4": {
+    "id": 0,
+    "info": {
+      "width": 1200,
+      "height": 400,
+      "center": {
+        "x": 600,
+        "y": 130
+      },
+      "left_center": {
+        "x": 320,
+        "y": 130
+      },
+      "right_center": {
+        "x": 880,
+        "y": 130
+      }
+    },
+    "path": "objects/glasses/woman_4.png"
+  }
+}
