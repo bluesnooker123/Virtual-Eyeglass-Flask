@@ -164,7 +164,7 @@ def load_accessory_obj(obj_id):
 def face_overlay_accessory(src_img, accessory_obj_id=None):
     """ FACE OVERLAY WITH ACCESSORY """
     margin = 1.5
-    width = 600
+    width = 500
     ratio = 1
 
     # Load the image
