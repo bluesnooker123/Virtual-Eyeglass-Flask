@@ -2,7 +2,7 @@ Click==7.0
 Flask==1.1.2
 gunicorn==20.1.0
 numpy==1.19.0
-tensorflow==2.3.1
+tensorflow-cpu==2.3.1
 dlib
 opencv-python
 itsdangerous==1.1.0
