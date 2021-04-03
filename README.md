@@ -10,6 +10,7 @@ To deploy Flask Applicatoin to Heroku please refer this URL:
 [https://stackabuse.com/deploying-a-flask-application-to-heroku]
 
 When deploying to Heroku.com you have to refer below two points.
+
 1) Tensorflow 2.0 module is very large because of its GPU support. Since Heroku doesn't support GPU, it doesn't make sense to install the module with GPU support.
 Solution:
 Simply replace tensorflow with tensorflow-cpu in your requirements.
