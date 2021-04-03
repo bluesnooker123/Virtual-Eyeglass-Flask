@@ -146,6 +146,9 @@ def capture():
     stamp = camera.capture()
     return redirect(url_for('show_capture', timestamp=stamp))
 
+@app.route('/thanks/')
+def thanks():
+    return render_template('thanks.html')
 
 def stamp_file(timestamp):
     return 'captures/' + timestamp + ".jpg"

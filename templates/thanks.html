@@ -1,0 +1,29 @@
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <title>Camera App</title>
+    <style type="text/css">
+      img, svg {
+        max-width: 100%;
+      }
+      #thanks_div{
+        padding: 20vh 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+  	<center>
+      <div id="thanks_div">
+        <img src="{{ url_for('static',filename='thanks.jpg') }}" alt="">	
+      </div>
+    </center>
+  </body>
+</html>
+
+<script>
+  $(document).ready(function(){
+
+ })
+</script>
