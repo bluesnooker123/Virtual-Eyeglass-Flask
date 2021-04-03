@@ -20,7 +20,9 @@ Refer URL: https://stackoverflow.com/questions/61796196/heroku-tensorflow-2-2-1-
 Refer URL: https://stackoverflow.com/questions/49469764/how-to-use-opencv-with-heroku
 
 3) When building Flask application on heroku, sometimes you can see this error in the Build Log.
+
 "tensorflow-cpu 2.3.1 has requirement numpy<1.19.0,>=1.16.0, but you'll have numpy 1.19.0 which is incompatible."
+
 To solve this, please use numpy==1.18.5 instead of using numpy (or any higher numpy version).
 pip will automatically install/upgrade requirements, but it won't downgrade. You can manually install any version of a package.
 Please, downgrade numpy to 1.18.5 and see if the issue still persists.
