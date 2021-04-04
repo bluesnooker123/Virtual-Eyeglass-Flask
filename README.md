@@ -3,6 +3,8 @@
 1. You have to install virtual environment to run this project.
 2. To run project on local, please run "flask run"
 3. You can check project on localhost:5000
+4. Camera doesnot works when you deployed to heroku, because in this program we get the data of camera in the backend
+(I just deployed Flask application to heroku on this project)
 
 Note:
 ```
